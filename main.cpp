@@ -997,7 +997,7 @@ ourShader.setMat4("model", model);
 glBindVertexArray(VAO);
 glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
-        // groho
+// groho
 scaleMatrix = glm::scale(identityMatrix, glm::vec3(5.0f, 5.0f, 5.0f));
 translateMatrix = glm::translate(identityMatrix, glm::vec3(8.339f, 0.0f, 0.0f));
 model = translateMatrix * scaleMatrix;
@@ -1068,6 +1068,31 @@ model = translateMatrix * scaleMatrix;
 ourShader.setMat4("model", model);
 glBindVertexArray(VAO);
 glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+
+// choto groho
+scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.26863103994777165f, 0.7063317546651597f, 0.2554405932337004f));
+translateMatrix = glm::translate(identityMatrix, glm::vec3(7.539f, 0.0f, -2.497f));
+model = translateMatrix * scaleMatrix;
+ourShader.setMat4("model", model);
+glBindVertexArray(VAO);
+glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+
+// choto groho_copy
+scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.6695258651486503f, 0.38102971782485057f, 0.27020749948644557f));
+translateMatrix = glm::translate(identityMatrix, glm::vec3(7.43877629369978f, 0.08132550921007729f, -2.5006917265631863f));
+model = translateMatrix * scaleMatrix;
+ourShader.setMat4("model", model);
+glBindVertexArray(VAO);
+glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+
+// choto groho_copy_copy
+scaleMatrix = glm::scale(identityMatrix, glm::vec3(0.33932225556292933f, 0.38102971782485057f, 0.6358461836701017f));
+translateMatrix = glm::translate(identityMatrix, glm::vec3(7.52132719609621f, 0.08132550921007729f, -2.5921013976091003f));
+model = translateMatrix * scaleMatrix;
+ourShader.setMat4("model", model);
+glBindVertexArray(VAO);
+glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+
 
 
 
